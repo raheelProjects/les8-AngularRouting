@@ -4,8 +4,6 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { FirstpageComponent } from './firstpage/firstpage.component';
 import { SecondpageComponent } from './secondpage/secondpage.component';
 
-const homeRoute: Route = {};
-
 const routes: Routes = [
   {
     path: '',

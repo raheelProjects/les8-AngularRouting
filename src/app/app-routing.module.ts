@@ -1,10 +1,28 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { Route, RouterModule, Routes } from '@angular/router';
+import { HomepageComponent } from './homepage/homepage.component';
+import { FirstpageComponent } from './firstpage/firstpage.component';
+import { SecondpageComponent } from './secondpage/secondpage.component';
 
-const routes: Routes = [];
+const homeRoute: Route = {};
+
+const routes: Routes = [
+  {
+    path: '',
+    component: HomepageComponent,
+  },
+  {
+    path: 'firstpage',
+    component: FirstpageComponent,
+  },
+  {
+    path: 'secondpage',
+    component: SecondpageComponent,
+  },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

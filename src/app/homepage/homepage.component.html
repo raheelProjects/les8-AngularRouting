@@ -1,0 +1,4 @@
+<h1>{{ title }}</h1>
+<div *ngFor="let navi of navigations">
+  <button (click)="navigateTo(navi)">{{ navi }}</button>
+</div>
